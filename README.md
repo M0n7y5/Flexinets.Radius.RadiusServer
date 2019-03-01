@@ -18,7 +18,7 @@ https://tools.ietf.org/html/rfc5997
 # RadiusServer usage  
 See https://github.com/vforteli/RadiusServerService/tree/Base for an example implementation  
 
-```
+```csharp
 var path = Path.GetDirectoryName(AppDomain.CurrentDomain.BaseDirectory) + "\\radius.dictionary";
 var dictionary = new RadiusDictionary(path);
 var radiusPacketParser = new RadiusPacketParser(NullLogger<RadiusPacketParser>.Instance, dictionary);
